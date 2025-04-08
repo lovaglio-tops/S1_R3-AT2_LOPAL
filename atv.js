@@ -1,0 +1,1 @@
+const numero = parseFloat(prompt("Digite um numero"))
