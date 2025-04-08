@@ -1,14 +1,13 @@
-const numero = parseFloat(prompt("Digite um numero"));// contante para armazenar o numero do usuario
+const idade = parseInt(prompt("Digite sua idade:"));
 
-if(isNaN(numero)){//caso o usuario nao digite um numero ele vai apontar um erro
-    alert("erro você não digitou um numero:");
-}else{//se nao ele vai analisar se é positivo ou negativo
-    if(numero>0){
-        alert("numero é positivo");   
+if(isNaN(idade)|| idade<0){
+    alert("Você digitou um caracter errado:");
+}else{
+    if(idade>=18){
+        alert("Voçê é maior de idade:")
     }else{
-        alert("numero é negativo")
+        alert("você é menor de idade:")
     }
-} 
-   
+}
     
     
