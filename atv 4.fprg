@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="atv 4"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:48:19 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ2OzIwMjUtMDQtMDg7IjAxOjMwOjEzICI7MjYxNw=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ2OzIwMjUtMDQtMDg7IjAxOjQ4OjE5ICI7MTsyNzQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorCompra, desconto" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor da compra:&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra = 100 || valorCompra &gt; 100">
+                <then>
+                    <assign variable="desconto" expression="valorCompra*0.1"/>
+                    <assign variable="valorCompra" expression="valorCompra-desconto"/>
+                    <output expression="&quot;Seu compra &#233;:$&quot; &amp;valorCompra" newline="True"/>
+                    <output expression="&quot;seu desconto foi:$&quot;&amp;desconto" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sua compra nao tem desconto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

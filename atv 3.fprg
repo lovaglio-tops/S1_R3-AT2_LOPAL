@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="atv 3"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:29:23 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ2OzIwMjUtMDQtMDg7IjAxOjIzOjQ0ICI7MjYyMw=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ2OzIwMjUtMDQtMDg7IjAxOjI5OjIzICI7MTsyNzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numPar" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva um numero:&quot;" newline="True"/>
+            <input variable="numPar"/>
+            <if expression="numPar%2==0">
+                <then>
+                    <output expression="&quot;numero par:&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu numero &#233; impar ou decimal:&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
